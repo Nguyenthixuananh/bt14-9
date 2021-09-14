@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--a,b,c > 0
+a + b > c
+b + c > a
+a + c > b-->
+<script>
+    let a = +prompt("Nhập cạnh thứ 1");
+    let b = +prompt("Nhập cạnh thứ 2");
+    let c = +prompt("Nhập cạnh thứ 3");
+    if (a > 0 && b > 0 && c > 0 && (a + b) > c && (b + c) > a && (a + c) > b) {
+        alert("3 số thực (a,b,c) nhập vào là cạnh của một tam giác.")
+    } else {
+        alert("3 số thực (a,b,c) nhập vào không phải là cạnh của một tam giác.")
+    }
+</script>
+</body>
+</html>

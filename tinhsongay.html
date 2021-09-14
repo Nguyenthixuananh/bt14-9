@@ -7,14 +7,14 @@
 <body>
 <form>
     <input type="text" id="monthid">
-    <button onclick="tinh()">Tính số ngày</button>
-    <br>
+    <button type="button" onclick="tinh()">Tính số ngày</button>
+    <p id="kq">Kết quả là : </p>
 
 </form>
 <script>
     function tinh() {
 
-        let month = +document.getElementById("monthid").value
+        let month = +document.getElementById("monthid").value;
         switch (month) {
             case 1:
             case 3:
@@ -23,17 +23,17 @@
             case 8:
             case 10:
             case 12:
-                document.write("Tháng" + month + "có 31 ngày")
+               document.getElementById("kq").innerText= "Tháng " + month + " có 31 ngày"
 
                 break;
             case 2:
-                document.write("Tháng" + month + "có 28 hoặc 29 ngày")
+                document.getElementById("kq").innerText= "Tháng " + month + " có 28 hoặc 29 ngày"
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                document.write("Tháng" + month + "có 30 ngày")
+                document.getElementById("kq").innerText= "Tháng " + month + " có 30 ngày"
                 break;
             default:
                 document.write("Số tháng nhập không hợp lệ")
